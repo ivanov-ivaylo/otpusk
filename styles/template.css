@@ -45,8 +45,8 @@ div.clear {
 
 div.t-left {
     
+    #background-color: #ff0000;
     width: 30%;
-    background-color: #ff0000;
     font-family: "Times New Roman";
     font-size: 11pt;
     float: left;
@@ -54,8 +54,8 @@ div.t-left {
 
 div.t-right {
     
+    #background-color: #00ff00;
     width: 30%;
-    background-color: #00ff00;
     font-family: "Times New Roman";
     font-size: 11pt;
     float: right;
@@ -63,10 +63,10 @@ div.t-right {
 
 div.t-body {
     
+    #background-color: #0000ff;
     width: 100%;
     margin-top: 20pt;
     line-height: 150%;
-    background-color: #0000ff;
     font-family: "Times New Roman";
     font-size: 11pt;
     line-height: 220%;
