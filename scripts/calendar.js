@@ -94,10 +94,10 @@
 		
         namelb.onclick = function( ) {
 
-            name = prompt('Please enter your name', name);
-			if ( name != null ) {
+            var tname = prompt('Please enter your name', name);
+			if ( tname != null ) {
 				
-				alert("3333");
+				name = tname;
 				if ( name == "" ) name = "Click here to enter your name";
 				localStorage.setItem( 'name777', name );
 				this.innerHTML = name;
@@ -106,8 +106,10 @@
        
         companylb.onclick = function( ) {
            
-            company = prompt('Please enter your company', company);
-			if ( company != null ) {
+            var tcompany = prompt('Please enter your company', company);
+			if ( tcompany != null ) {
+				
+				company = tcompany;
 				if ( company == "" ) company = "Click here to enter your company";
 				localStorage.setItem( 'company777', company );
 				this.innerHTML = company;
@@ -116,8 +118,10 @@
         
         joblb.onclick = function( ) {
            
-            job = prompt('Please enter your job', job);
-			if ( job != null ) {
+            var tjob = prompt('Please enter your job', job);
+			if ( tjob != null ) {
+				
+				job = tjob;
 				if ( job == "" ) job = "Click here to enter your job";
 				localStorage.setItem( 'job777', job );
 				this.innerHTML = job;
