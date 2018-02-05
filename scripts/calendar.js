@@ -10,6 +10,7 @@
     var btn_forward = document.getElementById("nav-forward");
     var monthlb = document.getElementById("nav-month");
     var rangelb = document.getElementById("sel-range");
+	var vactypelb = document.getElementById("vac-type")
     var namelb = document.getElementById("emp-name");
     var companylb = document.getElementById("emp-company");
     var joblb = document.getElementById("emp-job");
@@ -19,6 +20,7 @@
     var sel_date1 = new Date(0);
     var sel_date2 = new Date(0);
     var sel_mode = 0;
+	var vac_type = 0;
 
     function initialize_calendar() {
         
@@ -26,7 +28,8 @@
         cur_year = today.getFullYear();
         
         localStorage.setItem( 'today777', get_date_str( today ) );
-        
+		localStorage.setItem( 'vactype777', "платен/<del>неплатен</del>" );
+		
         show_month( cur_month, cur_year );
 
         var name = localStorage.getItem( 'name777' );
@@ -73,28 +76,52 @@
                 }
             }
         }
+		
+		vactypelb.onclick = function( ) {
+            
+            if ( vac_type == 0 ) {
+				
+				vactypelb.innerHTML = "<del>paid</del>/unpaid";
+				localStorage.setItem( 'vactype777', "<del>платен</del>/неплатен" );
+			} else {
+				
+				vactypelb.innerHTML = "paid/<del>unpaid</del>";
+				localStorage.setItem( 'vactype777', "платен/<del>неплатен</del>" );
+			}
+			
+			vac_type = 1 - vac_type;
+        }
+		
         namelb.onclick = function( ) {
 
             name = prompt('Please enter your name', name);
-            if ( name == "" || name == null ) name = "Click here to enter your name";
-            localStorage.setItem( 'name777', name );
-            this.innerHTML = name;
+			if ( name != null ) {
+				
+				alert("3333");
+				if ( name == "" ) name = "Click here to enter your name";
+				localStorage.setItem( 'name777', name );
+				this.innerHTML = name;
+			}
         }
        
         companylb.onclick = function( ) {
            
             company = prompt('Please enter your company', company);
-            if ( company == "" || company == null ) company = "Click here to enter your company";
-            localStorage.setItem( 'company777', company );
-            this.innerHTML = company;
+			if ( company != null ) {
+				if ( company == "" ) company = "Click here to enter your company";
+				localStorage.setItem( 'company777', company );
+				this.innerHTML = company;
+			}
         }
         
         joblb.onclick = function( ) {
            
             job = prompt('Please enter your job', job);
-            if ( job == "" || job == null ) job = "Click here to enter your job";
-            localStorage.setItem( 'job777', job );
-            this.innerHTML = job;
+			if ( job != null ) {
+				if ( job == "" ) job = "Click here to enter your job";
+				localStorage.setItem( 'job777', job );
+				this.innerHTML = job;
+			}
         }
 
         for ( var i = 0; i < cells.length; i++ ) {

@@ -21,7 +21,7 @@
         <div class="t-body">
             <h1>МОЛБА</h1>
             <br>
-            <div class="t-name">от <div id="t4">Чичо Куре</div><br><i>(трите имена по документ за самоличност)</i><br></div>на длъжност '<div id="t6">шефче</div>' в <div id="t2">ЕТ Тарикат</div><br>Уважаеми(а) господин(жо) Управител,<br>Моля да ми разрешите да използвам <del>неплатен</del>/платен <i>(ненужното се зачертава)</i> отпуск<br>в размер на <div id="t12">10</div> ( <div id="t14">двадесет и пет )</div> работни дни, за периода <div id="t8">11.22.3333г.</div> до <div id="t10">44.55.6666г.</div> включително.
+            <div class="t-name">от <div id="t4">Чичо Куре</div><br><i>(трите имена по документ за самоличност)</i><br></div>на длъжност <div id="t6">шефче</div> в <div id="t2">ЕТ Тарикат</div><br>Уважаеми(а) господин(жо) Управител,<br>Моля да ми разрешите да използвам <div id="t17">неплатен/платен</div> <i>(ненужното се зачертава)</i> отпуск<br>в размер на <div id="t12">10</div> ( <div id="t14">двадесет и пет )</div> работни дни, за периода <div id="t8">11.22.3333г.</div> до <div id="t10">44.55.6666г.</div> включително.
         </div>
         
         <div class="t-left">
@@ -41,13 +41,10 @@
             <h6>На основание чл.155 / чл.160, ал.1 от Кодекса на труда:</h6>
             <h2>РАЗРЕШАВАМ</h2>
             <br>
-            <div class="t-name">на <div id="t5">Чичо Куре</div><br><i>(трите имена по документ за самоличност)</i><br></div>на длъжност '<div id="t7">шефче</div>' в <div id="t3">ЕТ Тарикат</div> да ползва <del>неплатен</del>/платен <i>(ненужното се зачертава)</i> отпуск в размер на <div id="t13">10</div> ( <div id="t15">двадесет и пет</div> ) работни дни, за периода <div id="t9">11.22.3333г.</div> до <div id="t11">44.55.6666г.</div> включително.
+            <div class="t-name">на <div id="t5">Чичо Куре</div><br><i>(трите имена по документ за самоличност)</i><br></div>на длъжност <div id="t7">шефче</div> в <div id="t3">ЕТ Тарикат</div> да ползва <div id="t18">неплатен/платен</div> <i>(ненужното се зачертава)</i> отпуск в размер на <div id="t13">10</div> ( <div id="t15">двадесет и пет</div> ) работни дни, за периода <div id="t9">11.22.3333г.</div> до <div id="t11">44.55.6666г.</div> включително.
         </div>
         
         <h6>Настоящата заповед да се връчи на лицето и на длъжностните лица за сведение и изпълнение.</h6>
-        
-        <br>
-        <br>
         
         <div class="t-right">
             <p>Личен състав: ..........<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/ подпис /</p>
@@ -113,7 +110,10 @@
                 l16.innerHTML = localStorage.getItem( 'today777' );
                 
                 // paid?
-                var l17 = document.getElementById("t17");     
+                var l17 = document.getElementById("t17");
+				var l18 = document.getElementById("t18");
+				l17.innerHTML = localStorage.getItem( 'vactype777' );
+                l18.innerHTML = localStorage.getItem( 'vactype777' );
             }
         </script>
     </body>
