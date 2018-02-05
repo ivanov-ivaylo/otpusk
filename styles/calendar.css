@@ -1,0 +1,166 @@
+body {
+
+    background: #EADEDB;
+}
+
+.settings-panel {
+    margin-top: 10px;
+    font-family: "Courier New";
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 1px 1px #808080;
+    user-select: none;
+    color: #6C4F3D;
+    opacity: 0.8;
+}
+
+.calendar-panel {
+    position: relative;
+    background: #FFFFFF;
+    width: 620px;
+    height: 480px;
+    border-radius: 10px;
+    user-select: none;
+    border-style: outset;
+    border-width: thin;
+    padding-bottom: 10px;
+}
+
+.nav-panel {
+    #background: rgb(128,0,255);
+    position: relative;
+    display: block;
+    width: 380px;
+    margin: 0 auto;
+}
+
+.nav-btn {
+    #background: rgb(255,0,0);    
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-family: "Arial";
+    font-size: 36px;
+    font-weight: bold;
+    color: #6C4F3D;
+    text-shadow: 1px 1px #808080;
+    opacity: 0.8;
+    text-align: center;
+}
+
+#nav-back {
+    float: left;
+}
+
+#nav-forward {
+    float: right;
+}
+
+.nav-label {
+	#background:#00ff00;
+	width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    font-family: "Courier New";
+    font-size: 32px;
+    font-weight: bold;
+	text-align: center;
+    color: #6C4F3D;
+    text-shadow: 1px 1px #808080;
+    opacity: 0.8;
+}
+
+h1 {
+    color:red;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th {
+    width: 80;
+    height: 50px;
+    font-family: "Courier New";
+    font-size: 44px;
+	font-weight: bold;
+    text-shadow: 1px 1px #808080;
+    text-align: center;
+    color: #000060;
+    padding-bottom: 5px;
+    opacity: 0.8;
+}
+
+td.def-cell {
+    width: 80px;
+    height: 40px;
+    font-family: "Arial Black";
+    font-size: 40px;    
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px #808080;
+    text-align: center;
+    color: #000080;
+    opacity: 0.8;
+}
+
+td.hov-cell {
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+    border-radius: 20px;
+    background: #6C4F3D;
+}
+
+td.sel-cell{
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+    border-radius: 20px;
+    background: #6C4F3D;
+    opacity: 0.4;
+}
+
+td.red-cell {
+	color:#FF0000;
+}
+
+th.dark-red-cell, td.dark-red-cell {
+	color:#800000;
+}
+
+td.opaque-cell {
+    opacity: 0.3;
+}
+
+.doit {
+    margin-top: 24px;
+    padding: 15px 25px;
+    font-family: "Arial Black";
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #6C4F3D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #808080;
+}
+
+.doit:active {
+    background-color: #6C4F3D;
+    box-shadow: 0 5px #808080;
+    transform: translateY(4px);
+}
+
+.doit a {
+    
+    color: #FFFFFF;
+    text-decoration: none;
+}

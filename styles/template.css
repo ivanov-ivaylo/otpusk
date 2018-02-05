@@ -1,0 +1,83 @@
+body {
+
+    margin: 0;
+    width: 90%;
+    padding-left: 20pt;
+    padding-top: 20pt;
+    padding-right: 20pt;
+}
+
+h1 {
+
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    font-weight: bold;
+    letter-spacing: 14pt;
+    text-align: center;
+}
+
+h2 {
+
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    font-weight: bold;
+    letter-spacing: 5pt;
+    text-align: center;
+}
+
+h6 {
+
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 20pt;
+}
+
+hr {
+    border-top: 1px dashed #8c8b8b;
+}
+
+div.clear {
+    
+    clear: both;
+}
+
+div.t-left {
+    
+    width: 30%;
+    background-color: #ff0000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    float: left;
+}
+
+div.t-right {
+    
+    width: 30%;
+    background-color: #00ff00;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    float: right;
+}
+
+div.t-body {
+    
+    width: 100%;
+    margin-top: 20pt;
+    line-height: 150%;
+    background-color: #0000ff;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    line-height: 220%;
+}
+
+div.t-name {
+    
+    line-height: 70%;
+}
+
+#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8, #t9, #t10, #t11, #t12, #t13, #t14, #t15, #t16, #t17 {
+    
+    display: inline;
+}
