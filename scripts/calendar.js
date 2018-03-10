@@ -150,7 +150,7 @@
             
             if ( ( year % 4 == 0 ) && !( ( year % 100 == 0 ) ^ ( year % 400 == 0 ) ) )
                 num_days += 1;
-        } else if ( month % 2 ) {
+        } else if ( ( month % 7 ) % 2 ) {
         
             num_days = 30;
         } else {
