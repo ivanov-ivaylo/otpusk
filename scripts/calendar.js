@@ -35,7 +35,7 @@
         var name = localStorage.getItem( 'name777' );
         if ( name == null ) {
             
-            name = prompt('Моля въведете своето име' );
+            name = prompt('Моля, въведете своето име' );
             if ( name == "" || name == null ) name = "Кликнете за да въведете своето име";
             localStorage.setItem( 'name777', name );
         }
@@ -44,7 +44,7 @@
         var company = localStorage.getItem( 'company777' );
         if ( company == null ) {
             
-            company = prompt('Моля въведете компания' );
+            company = prompt('Моля, въведете компания' );
             if ( company == "" || company == null ) company = "Кликнете за да въведеде компания";
             localStorage.setItem( 'company777', company );
         }
@@ -53,7 +53,7 @@
         var job = localStorage.getItem( 'job777' );
         if ( job == null ) {
             
-            job = prompt('Моля въведете своята длъжност' );
+            job = prompt('Моля, въведете своята длъжност' );
             if ( job == "" || job == null ) job = "Кликнете за да въведете своята длъжност";
             localStorage.setItem( 'job777', job );
         }
@@ -94,7 +94,7 @@
 		
         namelb.onclick = function( ) {
 
-            var tname = prompt('Моля въведете своето име', name);
+            var tname = prompt('Моля, въведете своето име', name);
 			if ( tname != null ) {
 				
 				name = tname;
@@ -106,7 +106,7 @@
        
         companylb.onclick = function( ) {
            
-            var tcompany = prompt('Моля въведете компания', company);
+            var tcompany = prompt('Моля, въведете компания', company);
 			if ( tcompany != null ) {
 				
 				company = tcompany;
@@ -118,7 +118,7 @@
         
         joblb.onclick = function( ) {
            
-            var tjob = prompt('Моля въведете своята длъжност', job);
+            var tjob = prompt('Моля, въведете своята длъжност', job);
 			if ( tjob != null ) {
 				
 				job = tjob;
