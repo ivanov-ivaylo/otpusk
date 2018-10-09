@@ -77,7 +77,16 @@ div.t-name {
     line-height: 70%;
 }
 
-#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8, #t9, #t10, #t11, #t12, #t13, #t14, #t15, #t16, #t17 {
+#cal {
+	border-style: dashed;
+	border-color: #FF0000;
+	border-radius: 10px;
+	border-width: 4px;
+	font-family: "Times New Roman";
+	font-size: 11pt;
+}
+
+#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8, #t9, #t10, #t11, #t12, #t13, #t14, #t15, #t16, #t17, #t18 {
     
     display: inline;
 }

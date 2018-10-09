@@ -35,8 +35,8 @@
         var name = localStorage.getItem( 'name777' );
         if ( name == null ) {
             
-            name = prompt('Please enter your name' );
-            if ( name == "" || name == null ) name = "Click here to enter your name";
+            name = prompt('Моля въведете своето име' );
+            if ( name == "" || name == null ) name = "Кликнете за да въведете своето име";
             localStorage.setItem( 'name777', name );
         }
         namelb.innerHTML = name;
@@ -44,8 +44,8 @@
         var company = localStorage.getItem( 'company777' );
         if ( company == null ) {
             
-            company = prompt('Please enter your company' );
-            if ( company == "" || company == null ) company = "Click here to enter your company";
+            company = prompt('Моля въведете компания' );
+            if ( company == "" || company == null ) company = "Кликнете за да въведеде компания";
             localStorage.setItem( 'company777', company );
         }
         companylb.innerHTML = company;
@@ -53,8 +53,8 @@
         var job = localStorage.getItem( 'job777' );
         if ( job == null ) {
             
-            job = prompt('Please enter your job' );
-            if ( job == "" || job == null ) job = "Click here to enter your job";
+            job = prompt('Моля въведете своята длъжност' );
+            if ( job == "" || job == null ) job = "Кликнете за да въведете своята длъжност";
             localStorage.setItem( 'job777', job );
         }
         joblb.innerHTML = job;
@@ -66,7 +66,7 @@
             
             if ( sel_mode == 2 ) {
                 
-                var days = prompt('Please enter number of days:', String( days_days ));
+                var days = prompt('Дължина на отпуската в дни:', String( days_days ));
                 
                 if ( ( days != null ) && ( !isNaN( days ) ) ) {
                     
@@ -94,11 +94,11 @@
 		
         namelb.onclick = function( ) {
 
-            var tname = prompt('Please enter your name', name);
+            var tname = prompt('Моля въведете своето име', name);
 			if ( tname != null ) {
 				
 				name = tname;
-				if ( name == "" ) name = "Click here to enter your name";
+				if ( name == "" ) name = "Кликнете за да въведете своето име";
 				localStorage.setItem( 'name777', name );
 				this.innerHTML = name;
 			}
@@ -106,11 +106,11 @@
        
         companylb.onclick = function( ) {
            
-            var tcompany = prompt('Please enter your company', company);
+            var tcompany = prompt('Моля въведете компания', company);
 			if ( tcompany != null ) {
 				
 				company = tcompany;
-				if ( company == "" ) company = "Click here to enter your company";
+				if ( company == "" ) company = "Кликнете за да въведете компания";
 				localStorage.setItem( 'company777', company );
 				this.innerHTML = company;
 			}
@@ -118,11 +118,11 @@
         
         joblb.onclick = function( ) {
            
-            var tjob = prompt('Please enter your job', job);
+            var tjob = prompt('Моля въведете своята длъжност', job);
 			if ( tjob != null ) {
 				
 				job = tjob;
-				if ( job == "" ) job = "Click here to enter your job";
+				if ( job == "" ) job = "Кликнете за да въведете своята длъжност";
 				localStorage.setItem( 'job777', job );
 				this.innerHTML = job;
 			}
