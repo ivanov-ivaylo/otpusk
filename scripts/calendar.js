@@ -1,6 +1,6 @@
 /*global document, alert, prompt, localStorage */
 
-    var monthstr = [ "January", "February", "March", "April", "May", "June",    "July", "August", "September", "October", "November", "December" ];
+    var monthstr = [ "Януари", "Февруари", "Март", "Април", "Май", "Юни", "Юли", "Август", "Септември", "Октомври", "Ноември", "Декември" ];
 
     var days_days;
 
@@ -305,7 +305,7 @@
             str_to = get_date_str( date2 );
         }
         
-        return str_from + " - " + str_to + "(incl) " + num_days + " days";
+        return str_from + " - " + str_to + "(включително) " + num_days + ( num_days == 1 ? " ден " : " дни" );
     }
 
 	function select_date( cell_idx ) {
