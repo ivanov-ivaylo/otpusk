@@ -10,6 +10,7 @@
     var btn_forward = document.getElementById("nav-forward");
     var monthlb = document.getElementById("nav-month");
     var rangelb = document.getElementById("sel-range");
+    var issuedatelb = document.getElementById("issue-date");
 	var vactypelb = document.getElementById("vac-type")
     var namelb = document.getElementById("emp-name");
     var companylb = document.getElementById("emp-company");
@@ -27,10 +28,12 @@
         cur_month = today.getMonth();
         cur_year = today.getFullYear();
         
-        localStorage.setItem( 'today777', get_date_str( today ) );
+        localStorage.setItem( 'issuedate777', get_date_str( today ) );
 		localStorage.setItem( 'vactype777', "платен/<del>неплатен</del>" );
 		
         show_month( cur_month, cur_year );
+        
+        issuedatelb.innerHTML = 'Дата на издаване: ' + get_date_str( today ) ;
 
         var name = localStorage.getItem( 'name777' );
         if ( name == null ) {
@@ -75,6 +78,17 @@
                     localStorage.setItem( 'days777', String( days_days ) );
                 }
             }
+        }
+        
+        issuedatelb.onclick = function ( ) {
+			
+			if ( rangelb.innerHTML.length > 1 ) {
+				alert( "Изберете дата на издаване" );
+				cur_month = today.getMonth();
+				cur_year = today.getFullYear();
+				show_month( cur_month, cur_year );
+				sel_mode = 3;
+			}
         }
 		
 		vactypelb.onclick = function( ) {
@@ -358,7 +372,14 @@
             sel_date2.setFullYear( cur_year, cur_month, day_selected );
             sel_mode = 1;
             rangelb.innerHTML = "-";
-        } else {
+        } else if ( sel_mode == 3 ) {
+			
+			sel_date1.setFullYear( cur_year, cur_month, day_selected );
+			sel_date2.setFullYear( cur_year, cur_month, day_selected );
+			localStorage.setItem( 'issuedate777', get_date_str( sel_date1 ) );
+			issuedatelb.innerHTML = 'Дата на издаване: ' + get_date_str( sel_date1 ) ;
+			sel_mode = 0;
+		}else {
 
             sel_mode = 0;
             rangelb.innerHTML = "-";
