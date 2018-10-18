@@ -25,7 +25,7 @@
         </div>
         
         <div class="t-left">
-            <p>гр.София<br><br><input id="cal" type="date"></p>
+            <p>гр.София<br><br><div id="t16">00.00.0000</div> г.</p>
         </div>
 
         <div class="t-right">
@@ -58,10 +58,6 @@
                    "шест", "седем", "осем", "девет", "десет",
                    "единатесет", "дванадесет", "тринадесет", "четиринатесет", "петнадесет", "шестнадесет",
                    "осемнадесет", "деветнадесет", "двадесет" ];
-				   
-			var cal = document.getElementById("cal"); 
-			cal.valueAsDate = new Date();
-			setTimeout(function(){ cal.style.borderWidth = "0px"; }, 2000);
             
             function setdata() {
 
@@ -108,13 +104,21 @@
                 var l15 = document.getElementById("t15");
                 l14.innerHTML = daystr[ Number( localStorage.getItem( 'days777' ) ) ];
                 l15.innerHTML = daystr[ Number( localStorage.getItem( 'days777' ) ) ];
+				
+				// today
+                var l16 = document.getElementById("t16");
+                l16.innerHTML = localStorage.getItem( 'today777' );
                 
                 // paid?
                 var l17 = document.getElementById("t17");
-				var l18 = document.getElementById("t18");
-				l17.innerHTML = localStorage.getItem( 'vactype777' );
+                var l18 = document.getElementById("t18");
+                l17.innerHTML = localStorage.getItem( 'vactype777' );
                 l18.innerHTML = localStorage.getItem( 'vactype777' );
             }
+
+            window.focus();
+            window.print();
+            window.history.back();
         </script>
     </body>
 </html>

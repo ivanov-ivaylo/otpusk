@@ -81,11 +81,11 @@
             
             if ( vac_type == 0 ) {
 				
-				vactypelb.innerHTML = "<del>paid</del>/unpaid";
+				vactypelb.innerHTML = "<del>платен</del>/неплатен";
 				localStorage.setItem( 'vactype777', "<del>платен</del>/неплатен" );
 			} else {
 				
-				vactypelb.innerHTML = "paid/<del>unpaid</del>";
+				vactypelb.innerHTML = "платен/<del>неплатен</del>";
 				localStorage.setItem( 'vactype777', "платен/<del>неплатен</del>" );
 			}
 			
