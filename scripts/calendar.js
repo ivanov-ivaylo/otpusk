@@ -15,6 +15,7 @@
     var namelb = document.getElementById("emp-name");
     var companylb = document.getElementById("emp-company");
     var joblb = document.getElementById("emp-job");
+	var printme = document.getElementById("print-me");
 
     var cur_month, cur_year;
     var today = new Date();
@@ -140,6 +141,14 @@
 				localStorage.setItem( 'job777', job );
 				this.innerHTML = job;
 			}
+        }
+		
+		printme.onclick = function( ) {
+           
+            template = window.open( "template.html" );
+			template.focus();
+			//template.print();
+			//template.close();
         }
 
         for ( var i = 0; i < cells.length; i++ ) {
