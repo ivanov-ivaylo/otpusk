@@ -82,7 +82,7 @@
         
         issuedatelb.onclick = function ( ) {
 			
-			if ( rangelb.innerHTML.length > 1 ) {
+			if ( sel_mode == 0 || sel_mode == 2 ) {
 				alert( "Изберете дата на издаване" );
 				cur_month = today.getMonth();
 				cur_year = today.getFullYear();
