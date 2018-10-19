@@ -47,7 +47,7 @@
         var company = localStorage.getItem( 'company777' );
         if ( company == null ) {
             
-            company = prompt('Моля, въведете компания' );
+            company = prompt('Моля, въведете компания', 'Тайгър Технолоджи АД' );
             if ( company == "" || company == null ) company = "Кликнете за да въведеде компания";
             localStorage.setItem( 'company777', company );
         }
